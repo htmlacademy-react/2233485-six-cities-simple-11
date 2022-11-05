@@ -1,4 +1,5 @@
 import { Header } from '../../components/header/header';
+import { Footer } from '../../components/footer/footer';
 import styles from './_404.module.css';
 
 export const PageNotFound = (): JSX.Element => (
@@ -12,6 +13,6 @@ export const PageNotFound = (): JSX.Element => (
       </span>
       {/*</Link>*/}
     </section>
-
+    <Footer />
   </div>
 );
