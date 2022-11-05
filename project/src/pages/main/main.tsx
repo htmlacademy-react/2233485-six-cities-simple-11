@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Header } from '../../components/header/header';
-import { Paris } from '../../components/cities/paris/paris';
+import { OffersCardInterface } from '../../types/offers-card-types';
+import { Offer } from '../offer/offer';
 
-export const MainPage = () => (
+type MainPageProps = {
+  offersCards: OffersCardInterface[];
+}
+
+export const MainPage: FC<MainPageProps> = ({ offersCards }) => (
   <main className="page__main page__main--index">
     <Header />
     <h1 className="visually-hidden">Cities</h1>
@@ -66,11 +71,9 @@ export const MainPage = () => (
           </form>
           <div className="cities__places-list places__list tabs__content">
 
-            <Paris />
-            <Paris />
-            <Paris />
-            <Paris />
-            <Paris />
+            {offersCards.map((item) =>
+              <Offer key={item.id} dataOfferCard={item} />
+            )}
 
           </div>
         </section>

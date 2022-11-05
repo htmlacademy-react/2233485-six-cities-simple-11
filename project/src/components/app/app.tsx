@@ -1,12 +1,13 @@
 import React from 'react';
 import { MainPage } from '../../pages/main/main';
-import { PropertyPage } from '../../pages/property';
-import { PageNotFound } from '../../pages/page_404/_404';
+import { OffersCardInterface } from '../../types/offers-card-types';
 
-const App: React.FC = () => (
-  // <MainPage />
-  // <PropertyPage />
-  <PageNotFound />
+type AppProps = {
+  offersCard?: OffersCardInterface;
+}
+
+const App = ({ offersCard }: AppProps): JSX.Element => (
+  <MainPage offersCards={offersCard} />
 );
 
 export default App;
