@@ -1,7 +1,7 @@
 export enum OffersCardTypes {
-  Room = 'Room',
-  Apartment = 'Apartment',
-  Studio = 'Studio',
+  ROOM = 'Room',
+  APARTMENT = 'Apartment',
+  STUDIO = 'Studio',
 }
 
 export enum RatingStars {

@@ -8,6 +8,6 @@ export const offersCards: OffersCardInterface[] = [
     name: 'Beautiful &amp; luxurious studio at great location',
     img: 'img/apartment-01.jpg',
     ratingStars: RatingStars.fiveStar,
-    type: OffersCardTypes.Apartment,
+    type: OffersCardTypes.APARTMENT,
   },
 ];
