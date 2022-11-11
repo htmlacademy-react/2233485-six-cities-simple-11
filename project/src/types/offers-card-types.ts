@@ -1,4 +1,5 @@
 export enum OffersCardTypes {
+  PRIVATE_ROOM = 'Private room',
   ROOM = 'Room',
   APARTMENT = 'Apartment',
   STUDIO = 'Studio',

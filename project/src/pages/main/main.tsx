@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Header } from '../../components/header/header';
 import { OffersCardInterface } from '../../types/offers-card-types';
 import { Offer } from '../offer/offer';
+import { Nav } from '../../components/nav/nav';
 
 type MainPageProps = {
   offersCards: OffersCardInterface[];
@@ -11,42 +12,7 @@ export const MainPage: FC<MainPageProps> = ({ offersCards }) => (
   <main className="page__main page__main--index">
     <Header />
     <h1 className="visually-hidden">Cities</h1>
-    <div className="tabs">
-      <section className="locations container">
-        <ul className="locations__list tabs__list">
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main/main#">
-              <span>Paris</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main/main#">
-              <span>Cologne</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main/main#">
-              <span>Brussels</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item tabs__item--active">
-              <span>Amsterdam</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main/main#">
-              <span>Hamburg</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main/main#">
-              <span>Dusseldorf</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <Nav />
     <div className="cities">
       <div className="cities__places-container container">
         <section className="cities__places places">

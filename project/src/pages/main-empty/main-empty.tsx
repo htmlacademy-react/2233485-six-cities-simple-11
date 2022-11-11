@@ -1,45 +1,11 @@
 import React from 'react';
+import { Nav } from '../../components/nav/nav';
 
 export const MainEmptyPage = () => (
 
   <main className="page__main page__main--index page__main--index-empty">
     <h1 className="visually-hidden">Cities</h1>
-    <div className="tabs">
-      <section className="locations container">
-        <ul className="locations__list tabs__list">
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main-empty/main-empty#">
-              <span>Paris</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main-empty/main-empty#">
-              <span>Cologne</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main-empty/main-empty#">
-              <span>Brussels</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item">
-              <span>Amsterdam</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item" href="src/pages/main-empty/main-empty#">
-              <span>Hamburg</span>
-            </a>
-          </li>
-          <li className="locations__item">
-            <a className="locations__item-link tabs__item tabs__item--active" href="src/pages/main-empty/main-empty#">
-              <span>Dusseldorf</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <Nav />
     <div className="cities">
       <div className="cities__places-container cities__places-container--empty container">
         <section className="cities__no-places">
@@ -54,5 +20,4 @@ export const MainEmptyPage = () => (
       </div>
     </div>
   </main>
-
 );
