@@ -1,5 +1,10 @@
 function App(): JSX.Element {
-  return <p>Hello, world!</p>;
+  return (
+    <>
+      <h1>Hello, world!</h1>
+      <p>How are you?</p>
+    </>
+  );
 }
 
 export default App;
