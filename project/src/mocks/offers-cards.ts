@@ -37,15 +37,15 @@ const offersCards: OffersCardInterface[] = [
     ratingStars: RatingStars.fiveStar,
     type: OffersCardTypes.APARTMENT,
   },
-  {
-    id: '5',
-    price: 80,
-    isPremium: false,
-    name: 'Wood and stone place',
-    img: 'img/room.jpg',
-    ratingStars: RatingStars.fourStar,
-    type: OffersCardTypes.PRIVATE_ROOM,
-  },
+  // {
+  //   id: '5',
+  //   price: 80,
+  //   isPremium: false,
+  //   name: 'Wood and stone place',
+  //   img: 'img/room.jpg',
+  //   ratingStars: RatingStars.fourStar,
+  //   type: OffersCardTypes.PRIVATE_ROOM,
+  // },
 ];
 
 export default offersCards;
