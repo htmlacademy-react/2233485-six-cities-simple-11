@@ -1,4 +1,4 @@
-import { OffersCardTypes, RatingStars, OffersCardInterface } from './offers-card-types';
+import { OffersCardTypes, RatingStars, OffersCardInterface } from '../types/offers-card-types';
 
 const offersCards: OffersCardInterface[] = [
   {

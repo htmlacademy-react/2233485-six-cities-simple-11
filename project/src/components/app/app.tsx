@@ -1,5 +1,5 @@
 import MainPage from '../../pages/main/main';
-import offersCards from '../../types/offers-cards';
+import offersCards from '../../mocks/offers-cards';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageNotFound from '../../pages/page-not-found/page-not-found';
 import LoginPage from '../../pages/login/login';

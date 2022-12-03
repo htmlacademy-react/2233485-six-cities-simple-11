@@ -1,6 +1,6 @@
-import Header from '../components/header/header';
+import Header from '../../components/header/header';
 
-const Property = () => (
+const Room = () => (
   <>
     <Header />
     <main className="page__main page__main--property">
@@ -142,7 +142,7 @@ const Property = () => (
                   </div>
                 </li>
               </ul>
-              <form className="reviews__form form" action="#" method="post">
+              <form className="reviews__form form" action="project/src/pages#" method="post">
                 <label className="reviews__label form__label" htmlFor="review">Your review</label>
                 <div className="reviews__rating-form form__rating">
                   <input className="form__rating-input visually-hidden" name="rating" value="5" id="5-stars" type="radio" />
@@ -195,7 +195,7 @@ const Property = () => (
           <div className="near-places__list places__list">
             <article className="near-places__card place-card">
               <div className="near-places__image-wrapper place-card__image-wrapper">
-                <a href="#">
+                <a href="project/src/pages#">
                   <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image" />
                 </a>
               </div>
@@ -213,14 +213,14 @@ const Property = () => (
                   </div>
                 </div>
                 <h2 className="place-card__name">
-                  <a href="#">Wood and stone place</a>
+                  <a href="project/src/pages#">Wood and stone place</a>
                 </h2>
                 <p className="place-card__type">Private room</p>
               </div>
             </article>
             <article className="near-places__card place-card">
               <div className="near-places__image-wrapper place-card__image-wrapper">
-                <a href="#">
+                <a href="project/src/pages#">
                   <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt="Place image" />
                 </a>
               </div>
@@ -238,7 +238,7 @@ const Property = () => (
                   </div>
                 </div>
                 <h2 className="place-card__name">
-                  <a href="#">Canal View Prinsengracht</a>
+                  <a href="project/src/pages#">Canal View Prinsengracht</a>
                 </h2>
                 <p className="place-card__type">Apartment</p>
               </div>
@@ -248,7 +248,7 @@ const Property = () => (
                 <span>Premium</span>
               </div>
               <div className="near-places__image-wrapper place-card__image-wrapper">
-                <a href="#">
+                <a href="project/src/pages#">
                   <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt="Place image" />
                 </a>
               </div>
@@ -266,7 +266,7 @@ const Property = () => (
                   </div>
                 </div>
                 <h2 className="place-card__name">
-                  <a href="#">Nice, cozy, warm big bed apartment</a>
+                  <a href="project/src/pages#">Nice, cozy, warm big bed apartment</a>
                 </h2>
                 <p className="place-card__type">Apartment</p>
               </div>
@@ -278,4 +278,4 @@ const Property = () => (
   </>
 );
 
-export default Property;
+export default Room;

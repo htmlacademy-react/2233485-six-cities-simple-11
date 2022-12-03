@@ -7,24 +7,17 @@ interface OfferProps {
 }
 
 const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
-  const {
-    price,
-    isPremium,
-    name,
-    img,
-    ratingStars,
-    type,
-  } = dataOfferCard;
+  const {id, price, isPremium, name, img, ratingStars, type } = dataOfferCard;
 
   return (
-    <article className="near-places__card place-card">
+    <article className="cities__card place-card">
       {isPremium && (
         <div className="place-card__mark">
           <span>Premium</span>
         </div>
       )}
       <div className="near-places__image-wrapper place-card__image-wrapper">
-        <Link to="/">
+        <Link to={`/offer/${id}`}>
           <img className="place-card__image" src={img} width="260" height="200" alt="Place image" />
         </Link>
       </div>
@@ -42,7 +35,7 @@ const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <Link to="/">{name}</Link>
+          <Link to={`/offer/${id}`}>{name}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
