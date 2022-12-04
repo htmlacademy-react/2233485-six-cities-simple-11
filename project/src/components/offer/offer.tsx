@@ -7,7 +7,7 @@ interface OfferProps {
 }
 
 const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
-  const {id, price, isPremium, name, img, ratingStars, type } = dataOfferCard;
+  const {id, price, isPremium, title, img, ratingStars, type } = dataOfferCard;
 
   return (
     <article className="cities__card place-card">
@@ -35,7 +35,7 @@ const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <Link to={`/offer/${id}`}>{name}</Link>
+          <Link to={`/offer/${id}`}>{title}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
