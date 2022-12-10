@@ -47,3 +47,18 @@ export interface OffersCardInterface {
   host: OffersHost;
   maxAdults: number;
 }
+
+type ReviewUser = {
+  id: number;
+  name: string;
+  avatarUrl: string;
+  isPro: boolean;
+}
+
+export type Review = {
+  id: number;
+  user: ReviewUser;
+  comment: string;
+  date: string;
+  rating: number;
+};

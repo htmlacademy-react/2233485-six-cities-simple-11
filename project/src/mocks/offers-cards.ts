@@ -68,24 +68,72 @@ const offersCards: OffersCardInterface[] = [
     maxAdults: 3,
   },
 
-  // {
-  //   id: '3',
-  //   price: 132,
-  //   isPremium: false,
-  //   name: 'Canal View Prinsengracht',
-  //   img: 'img/apartment-02.jpg',
-  //   ratingStars: RatingStars.fourStars,
-  //   type: OffersCardTypes.APARTMENT,
-  // },
-  // {
-  //   id: 4,
-  //   price: 180,
-  //   isPremium: true,
-  //   title: 'Nice, cozy, warm big bed apartment',
-  //   img: 'img/apartment-03.jpg',
-  //   ratingStars: RatingStars.fiveStars,
-  //   type: OffersCardTypes.APARTMENT,
-  // },
+  {
+    id: 3,
+    title: 'Canal View Prinsengracht',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.',
+    city: {
+      name: 'Amsterdam',
+      location: {
+        latitude: 52.377956,
+        longitude: 4.897070,
+        zoom: 10,
+      },
+    },
+    price: 132,
+    isPremium: true,
+    type: OffersCardTypes.APARTMENT,
+    img: 'img/apartment-02.jpg',
+    ratingStars: RatingStars.fourStars,
+    bedrooms: 2,
+    location: {
+      latitude: 52.22450806,
+      longitude: 4.535795120,
+      zoom: 8,
+    },
+    facilities: ['Wi-Fi', 'Washing machine', 'Heating', 'Dishwasher', 'Cabel TV', 'Coffee machine'],
+    host: {
+      id: 1,
+      name: 'Angelina',
+      avatarUrl: 'img/avatar-angelina.jpg',
+      isPro: false,
+    },
+    maxAdults: 6,
+  },
+
+  {
+    id: 4,
+    title: 'Nice, cozy, warm big bed apartment',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century',
+    city: {
+      name: 'Cologne',
+      location: {
+        latitude: 50.559998,
+        longitude: 6.57,
+        zoom: 10,
+      },
+    },
+    price: 180,
+    isPremium: true,
+    type: OffersCardTypes.APARTMENT,
+    img: 'img/apartment-03.jpg',
+    ratingStars: RatingStars.fiveStars,
+    bedrooms: 4,
+    location: {
+      latitude: 50.22450880,
+      longitude: 6.535795520,
+      zoom: 8,
+    },
+    facilities: ['Wi-Fi', 'Washing machine', 'Towels', 'Heating', 'Coffee machine',
+      'Baby seat', 'Kitchen', 'Dishwasher', 'Cabel TV', 'Fridge'],
+    host: {
+      id: 1,
+      name: 'Max',
+      avatarUrl: 'img/avatar-max.jpg',
+      isPro: true,
+    },
+    maxAdults: 7,
+  },
 ];
 
 export default offersCards;
