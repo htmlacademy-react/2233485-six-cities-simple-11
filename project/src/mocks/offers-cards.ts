@@ -50,7 +50,7 @@ const offersCards: OffersCardInterface[] = [
     price: 80,
     isPremium: false,
     type: OffersCardTypes.PRIVATE_ROOM,
-    img: 'img/room.jpg',
+    img: 'img/room-page.jpg',
     ratingStars: RatingStars.fourStars,
     bedrooms: 1,
     location: {

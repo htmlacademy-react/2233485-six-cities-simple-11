@@ -1,7 +1,7 @@
 import Header from '../../components/header/header';
 import ReviewForm from '../../components/review/review-form';
 
-const Room = () => {
+const RoomPage = () => {
 
   return (
     <>
@@ -245,4 +245,4 @@ const Room = () => {
   );
 };
 
-export default Room;
+export default RoomPage;
