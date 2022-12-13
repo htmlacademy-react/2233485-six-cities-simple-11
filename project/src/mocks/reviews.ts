@@ -1,6 +1,6 @@
-import { Review } from '../types/offers-card-types';
+import { ReviewType } from '../types/offers-card-types';
 
-export const reviews: Review[] = [
+export const reviews: ReviewType[] = [
   {
     id: 1,
     user: {
