@@ -39,7 +39,7 @@ export interface OffersCardInterface {
   price: number;
   isPremium: boolean;
   type: OffersCardTypes;
-  img: string;
+  images: string[];
   ratingStars: RatingStars;
   bedrooms: number;
   location: OffersLocation;

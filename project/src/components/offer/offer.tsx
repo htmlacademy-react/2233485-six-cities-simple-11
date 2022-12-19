@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom';
 
 interface OfferProps {
   dataOfferCard: OffersCardInterface;
+  onMouseOver: (dataOfferCard: OffersCardInterface) => void;
 }
 
-const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
-  const {id, price, isPremium, title, img, ratingStars, type } = dataOfferCard;
+const Offer: FC<OfferProps> = ({ dataOfferCard, onMouseOver }) => {
+  const {id, price, isPremium, title, images, ratingStars, type } = dataOfferCard;
+
+  const handlerOfferCardMouseOver = () => {
+    onMouseOver(dataOfferCard);
+  };
 
   return (
-    <article className="cities__card place-card">
+    <article className="cities__card place-card" onMouseOver={handlerOfferCardMouseOver}>
       {isPremium && (
         <div className="place-card__mark">
           <span>Premium</span>
@@ -18,7 +23,7 @@ const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
       )}
       <div className="near-places__image-wrapper place-card__image-wrapper">
         <Link to={`/offer/${id}`}>
-          <img className="place-card__image" src={img} width="260" height="200" alt="Place image" />
+          <img className="place-card__image" src={images[0]} width="260" height="200" alt="Place image" />
         </Link>
       </div>
       <div className="place-card__info">
