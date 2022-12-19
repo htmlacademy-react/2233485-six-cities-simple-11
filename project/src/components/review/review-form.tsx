@@ -1,4 +1,4 @@
-import {ChangeEvent, FC, useState} from "react";
+import { ChangeEvent, FC, useState } from 'react';
 
 
 const ReviewForm: FC = () => {

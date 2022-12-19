@@ -26,19 +26,20 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
           <div className="property__gallery-container container">
             <div className="property__gallery">
               {images && images.map((image, i) => (
+                // eslint-disable-next-line react/no-array-index-key
                 <div className="property__image-wrapper" key={`img-${i}`}>
-                  <img className="property__image" src={image} alt="Photo studio" />
+                  <img className="property__image" src={image} alt='' />
                 </div>
               ))}
             </div>
           </div>
           <div className="property__container container">
             <div className="property__wrapper">
-              {isPremium &&
+              {isPremium && (
                 <div className="property__mark">
                   <span>Premium</span>
                 </div>
-              }
+              )}
               <div className="property__name-wrapper">
                 <h1 className="property__name">
                   {title}
@@ -70,6 +71,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
                 <h2 className="property__inside-title">What&apos;s inside</h2>
                 <ul className="property__inside-list">
                   {facilities?.map((item, i) => (
+                    // eslint-disable-next-line react/no-array-index-key
                     <li className="property__inside-item" key={`facilities-${i}`}>
                       {item}
                     </li>
@@ -81,10 +83,11 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
                 <div className="property__host-user user">
                   <div className={`
                     property__avatar-wrapper
-                    ${host?.isPro && 'property__avatar-wrapper--pro'}
-                    user__avatar-wrapper`
-                  }>
-                    <img className="property__avatar user__avatar" src={host?.avatarUrl} width="74" height="74" alt="Host avatar" />
+                    ${host?.isPro ? 'property__avatar-wrapper--pro' : ''}
+                    user__avatar-wrapper
+                  `}
+                  >
+                    <img className="property__avatar user__avatar" src={host?.avatarUrl} width="74" height="74" alt='' />
                   </div>
                   <span className="property__user-name">
                     {host?.name}
@@ -124,7 +127,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
               <article className="near-places__card place-card">
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="project/src/pages#">
-                    <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image" />
+                    <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt='' />
                   </a>
                 </div>
                 <div className="place-card__info">
@@ -149,7 +152,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
               <article className="near-places__card place-card">
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="project/src/pages#">
-                    <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt="Place image" />
+                    <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt='' />
                   </a>
                 </div>
                 <div className="place-card__info">
@@ -177,7 +180,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
                 </div>
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="project/src/pages#">
-                    <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt="Place image" />
+                    <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt='' />
                   </a>
                 </div>
                 <div className="place-card__info">

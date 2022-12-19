@@ -9,6 +9,8 @@ type OfferListProps = {
 const OfferList: FC<OfferListProps> = ({ offersCards }) => {
   const [openSort, setOpenSort] = useState(false);
   const [activeOfferCard, setActiveOfferCard] = useState<OffersCardInterface | null>(null);
+  // eslint-disable-next-line no-console
+  console.log('activeOfferCard', activeOfferCard);
 
   const handleSortOffer = () => {
     setOpenSort((prevState) => !prevState);
@@ -27,11 +29,11 @@ const OfferList: FC<OfferListProps> = ({ offersCards }) => {
           <form className="places__sorting" action="#" method="get">
             <span className="places__sorting-caption">Sort by </span>
             <span className="places__sorting-type" tabIndex={0} onClick={handleSortOffer}>
-                  Popular
-                  <svg className="places__sorting-arrow" width="7" height="4">
-                    <use xlinkHref="#icon-arrow-select"></use>
-                  </svg>
-                </span>
+              Popular
+              <svg className="places__sorting-arrow" width="7" height="4">
+                <use xlinkHref="#icon-arrow-select"></use>
+              </svg>
+            </span>
             {openSort && (
               <ul className="places__options places__options--custom places__options--opened">
                 <li className="places__option places__option--active" tabIndex={0}>Popular</li>

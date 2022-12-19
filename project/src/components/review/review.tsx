@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ReviewType } from "../../types/offers-card-types";
+import { ReviewType } from '../../types/offers-card-types';
 import { getRatingStars } from './review.utils';
 
 type ReviewProps = {
@@ -7,7 +7,7 @@ type ReviewProps = {
 }
 
 const Review: FC<ReviewProps> = ({ review }) => {
-  const { id, user, comment, date, rating } = review;
+  const { user, comment, date, rating } = review;
   const currentDate = new Date(date);
 
   return (

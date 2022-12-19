@@ -8,18 +8,15 @@ type MainPageProps = {
   offersCards: OffersCardInterface[];
 }
 
-const MainPage: FC<MainPageProps> = ({ offersCards }) => {
-
-  return(
-    <>
-      <Header/>
-      <main className="page__main page__main--index">
-        <h1 className="visually-hidden">Cities</h1>
-        <Nav/>
-        <OfferList offersCards={offersCards} />
-      </main>
-    </>
-  );
-};
+const MainPage: FC<MainPageProps> = ({ offersCards }) => (
+  <>
+    <Header/>
+    <main className="page__main page__main--index">
+      <h1 className="visually-hidden">Cities</h1>
+      <Nav/>
+      <OfferList offersCards={offersCards} />
+    </main>
+  </>
+);
 
 export default MainPage;
