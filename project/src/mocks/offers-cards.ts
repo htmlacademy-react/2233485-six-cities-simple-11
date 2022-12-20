@@ -4,7 +4,8 @@ const offersCards: OffersCardInterface[] = [
   {
     id: 1,
     title: 'Beautiful & luxurious studio at great location',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness' +
+      ' of Amsterdam. The building is green and from 18th century',
     city: {
       name: 'Amsterdam',
       location: {
@@ -39,7 +40,8 @@ const offersCards: OffersCardInterface[] = [
   {
     id: 2,
     title: 'Wood and stone place',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Paris. The building is green and from 19th century',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness' +
+      ' of Paris. The building is green and from 19th century',
     city: {
       name: 'Paris',
       location: {
@@ -73,7 +75,8 @@ const offersCards: OffersCardInterface[] = [
   {
     id: 3,
     title: 'Canal View Prinsengracht',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness' +
+      ' of Amsterdam.',
     city: {
       name: 'Amsterdam',
       location: {
@@ -107,7 +110,8 @@ const offersCards: OffersCardInterface[] = [
   {
     id: 4,
     title: 'Nice, cozy, warm big bed apartment',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century',
+    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness' +
+      ' of Amsterdam. The building is green and from 18th century',
     city: {
       name: 'Cologne',
       location: {

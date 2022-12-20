@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { OffersCardInterface } from '../../types/offers-card-types';
-import Offer from '../offer/offer';
+import OfferCard from '../offer-card/offer-card';
 
 type OfferListProps = {
   offersCards: OffersCardInterface[];
@@ -46,7 +46,7 @@ const OfferList: FC<OfferListProps> = ({ offersCards }) => {
           <div className="cities__places-list places__list tabs__content">
 
             {offersCards.map((item) =>
-              <Offer key={item.id} dataOfferCard={item} onMouseOver={handlerOfferCardMouseOver} />
+              <OfferCard key={item.id} dataOfferCard={item} onMouseOver={handlerOfferCardMouseOver} />
             )}
 
           </div>

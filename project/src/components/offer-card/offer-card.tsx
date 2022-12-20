@@ -7,7 +7,7 @@ interface OfferProps {
   onMouseOver: (dataOfferCard: OffersCardInterface) => void;
 }
 
-const Offer: FC<OfferProps> = ({ dataOfferCard, onMouseOver }) => {
+const OfferCard: FC<OfferProps> = ({ dataOfferCard, onMouseOver }) => {
   const {id, price, isPremium, title, images, ratingStars, type } = dataOfferCard;
 
   const handlerOfferCardMouseOver = () => {
@@ -48,4 +48,4 @@ const Offer: FC<OfferProps> = ({ dataOfferCard, onMouseOver }) => {
   );
 };
 
-export default Offer;
+export default OfferCard;
