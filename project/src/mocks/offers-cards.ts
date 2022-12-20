@@ -16,7 +16,8 @@ const offersCards: OffersCardInterface[] = [
     price: 120,
     isPremium: true,
     type: OffersCardTypes.APARTMENT,
-    images: ['img/apartment-01.jpg'],
+    images: ['img/apartment-01.jpg', 'img/room.jpg', 'img/apartment-01.jpg',
+      'img/apartment-02.jpg', 'img/apartment-03.jpg', 'img/studio-01.jpg'],
     ratingStars: RatingStars.fourStars,
     bedrooms: 3,
     location: {
@@ -50,7 +51,8 @@ const offersCards: OffersCardInterface[] = [
     price: 80,
     isPremium: false,
     type: OffersCardTypes.PRIVATE_ROOM,
-    images: ['img/room-page.jpg'],
+    images: ['img/room.jpg', 'img/apartment-01.jpg', 'img/apartment-02.jpg',
+      'img/apartment-03.jpg', 'img/studio-01.jpg', 'img/apartment-01.jpg'],
     ratingStars: RatingStars.fourStars,
     bedrooms: 1,
     location: {
@@ -81,9 +83,10 @@ const offersCards: OffersCardInterface[] = [
       },
     },
     price: 132,
-    isPremium: true,
+    isPremium: false,
     type: OffersCardTypes.APARTMENT,
-    images: ['img/apartment-02.jpg'],
+    images: ['img/apartment-02.jpg', 'img/room.jpg', 'img/apartment-01.jpg',
+      'img/apartment-03.jpg', 'img/studio-01.jpg', 'img/apartment-01.jpg'],
     ratingStars: RatingStars.fourStars,
     bedrooms: 2,
     location: {
@@ -116,7 +119,8 @@ const offersCards: OffersCardInterface[] = [
     price: 180,
     isPremium: true,
     type: OffersCardTypes.APARTMENT,
-    images: ['img/apartment-03.jpg'],
+    images: ['img/apartment-03.jpg', 'img/room.jpg', 'img/apartment-01.jpg',
+      'img/apartment-02.jpg', 'img/studio-01.jpg', 'img/apartment-01.jpg'],
     ratingStars: RatingStars.fiveStars,
     bedrooms: 4,
     location: {

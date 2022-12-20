@@ -9,7 +9,7 @@ const App = (): JSX.Element => (
   <BrowserRouter>
     <Routes>
       <Route index element={<MainPage offersCards={offersCards} />} />
-      <Route path={'/offer'} element={<RoomPage offersCards={offersCards} />} />
+      <Route path={'/offer/:id'} element={<RoomPage offersCards={offersCards} />} />
       <Route path={'/login'} element={<LoginPage />} />
       <Route path={'*'} element={<PageNotFound />} />
     </Routes>
