@@ -87,8 +87,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
                     user__avatar-wrapper
                   `}
                   >
-                    <img className="property__avatar user__avatar" src={host?.avatarUrl}
-                         width="74" height="74" alt='' />
+                    <img className="property__avatar user__avatar" src={host?.avatarUrl} width="74" height="74" alt='' />
                   </div>
                   <span className="property__user-name">
                     {host?.name}
@@ -154,8 +153,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
               <article className="near-places__card place-card">
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="project/src/pages#">
-                    <img className="place-card__image" src="img/apartment-02.jpg"
-                         width="260" height="200" alt='' />
+                    <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt='' />
                   </a>
                 </div>
                 <div className="place-card__info">
@@ -183,8 +181,7 @@ const RoomPage: FC<RoomPageProps> = ({ offersCards }) => {
                 </div>
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="project/src/pages#">
-                    <img className="place-card__image" src="img/apartment-03.jpg"
-                         width="260" height="200" alt='' />
+                    <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt='' />
                   </a>
                 </div>
                 <div className="place-card__info">
