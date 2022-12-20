@@ -4,34 +4,32 @@ import { Link } from 'react-router-dom';
 
 interface OfferProps {
   dataOfferCard: OffersCardInterface;
+  onMouseOver: (dataOfferCard: OffersCardInterface) => void;
 }
 
-const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
-  const {
-    price,
-    isPremium,
-    name,
-    img,
-    ratingStars,
-    type,
-  } = dataOfferCard;
+const OfferCard: FC<OfferProps> = ({ dataOfferCard, onMouseOver }) => {
+  const {id, price, isPremium, title, images, ratingStars, type } = dataOfferCard;
+
+  const handlerOfferCardMouseOver = () => {
+    onMouseOver(dataOfferCard);
+  };
 
   return (
-    <article className="near-places__card place-card">
+    <article className="cities__card place-card" onMouseOver={handlerOfferCardMouseOver}>
       {isPremium && (
         <div className="place-card__mark">
           <span>Premium</span>
         </div>
       )}
       <div className="near-places__image-wrapper place-card__image-wrapper">
-        <Link to="/">
-          <img className="place-card__image" src={img} width="260" height="200" alt="Place image" />
+        <Link to={`/offer/${id}`}>
+          <img className="place-card__image" src={images[0]} width="260" height="200" alt='' />
         </Link>
       </div>
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
           <div className="place-card__price">
-            <b className="place-card__price-value">&euro;{price}</b>
+            <b className="place-card__price-value">&euro;{price} </b>
             <span className="place-card__price-text">&#47;&nbsp;night</span>
           </div>
         </div>
@@ -42,7 +40,7 @@ const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <Link to="/">{name}</Link>
+          <Link to={`/offer/${id}`}>{title}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
@@ -50,4 +48,4 @@ const Offer: FC<OfferProps> = ({ dataOfferCard }) => {
   );
 };
 
-export default Offer;
+export default OfferCard;

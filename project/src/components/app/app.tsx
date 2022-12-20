@@ -1,15 +1,17 @@
-import MainPage from '../../pages/main/main';
-import offersCards from '../../types/offers-cards';
+import MainPage from '../../pages/main-page/main-page';
+import offersCards from '../../mocks/offers-cards';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageNotFound from '../../pages/page-not-found/page-not-found';
-import LoginPage from '../../pages/login/login';
+import LoginPage from '../../pages/login-page/login-page';
+import RoomPage from '../../pages/room-page/room-page';
 
 const App = (): JSX.Element => (
   <BrowserRouter>
     <Routes>
       <Route index element={<MainPage offersCards={offersCards} />} />
-      <Route path={'*'} element={<PageNotFound />} />
+      <Route path={'/offer/:id'} element={<RoomPage offersCards={offersCards} />} />
       <Route path={'/login'} element={<LoginPage />} />
+      <Route path={'*'} element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>
 );
